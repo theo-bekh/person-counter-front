@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/person-detector-front/static/css/main.c9644b1c.chunk.css",
+    "main.js": "/person-detector-front/static/js/main.73c6a6ee.chunk.js",
+    "main.js.map": "/person-detector-front/static/js/main.73c6a6ee.chunk.js.map",
+    "runtime-main.js": "/person-detector-front/static/js/runtime-main.4ca8717a.js",
+    "runtime-main.js.map": "/person-detector-front/static/js/runtime-main.4ca8717a.js.map",
+    "static/css/2.29ec1792.chunk.css": "/person-detector-front/static/css/2.29ec1792.chunk.css",
+    "static/js/2.35be19a7.chunk.js": "/person-detector-front/static/js/2.35be19a7.chunk.js",
+    "static/js/2.35be19a7.chunk.js.map": "/person-detector-front/static/js/2.35be19a7.chunk.js.map",
+    "static/js/3.464cf37d.chunk.js": "/person-detector-front/static/js/3.464cf37d.chunk.js",
+    "static/js/3.464cf37d.chunk.js.map": "/person-detector-front/static/js/3.464cf37d.chunk.js.map",
+    "index.html": "/person-detector-front/index.html",
+    "static/css/2.29ec1792.chunk.css.map": "/person-detector-front/static/css/2.29ec1792.chunk.css.map",
+    "static/css/main.c9644b1c.chunk.css.map": "/person-detector-front/static/css/main.c9644b1c.chunk.css.map",
+    "static/js/2.35be19a7.chunk.js.LICENSE.txt": "/person-detector-front/static/js/2.35be19a7.chunk.js.LICENSE.txt",
+    "static/media/Logo.43f0375e.svg": "/person-detector-front/static/media/Logo.43f0375e.svg",
+    "static/media/Logo2.04e98b58.svg": "/person-detector-front/static/media/Logo2.04e98b58.svg",
+    "static/media/300.css": "/person-detector-front/static/media/roboto-vietnamese-300-normal.af9afdc1.woff2",
+    "static/media/400.css": "/person-detector-front/static/media/roboto-vietnamese-400-normal.c0bec65d.woff2",
+    "static/media/500.css": "/person-detector-front/static/media/roboto-vietnamese-500-normal.b8e494da.woff2",
+    "static/media/700.css": "/person-detector-front/static/media/roboto-vietnamese-700-normal.3096f18a.woff2",
+    "static/media/sign_mask.3d0ba3b8.png": "/person-detector-front/static/media/sign_mask.3d0ba3b8.png",
+    "static/media/sign_ok.5d38830f.png": "/person-detector-front/static/media/sign_ok.5d38830f.png",
+    "static/media/sign_stop.3c4e9b02.png": "/person-detector-front/static/media/sign_stop.3c4e9b02.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4ca8717a.js",
+    "static/css/2.29ec1792.chunk.css",
+    "static/js/2.35be19a7.chunk.js",
+    "static/css/main.c9644b1c.chunk.css",
+    "static/js/main.73c6a6ee.chunk.js"
+  ]
+}
