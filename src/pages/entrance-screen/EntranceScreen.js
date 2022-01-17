@@ -9,6 +9,7 @@ import SignMask from '../../assets/sign_mask.png';
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 import './EntraceScreen.css';
 import { FullScreen, useFullScreenHandle } from "react-full-screen";
+import OccupationService from '../../services/OccupationService';
 
 
 
@@ -18,36 +19,29 @@ export class EntranceScreen extends React.Component{
         super(props);
         
         this.state = {
-            person: 30,
-            maxPerson: 50,
-            welcomeMessage: "Welcome to the Museu Nacional d'Art de Catalunya",
+            person: 0,
+            maxPerson: 100,
+            welcomeMessage: "Welcome",// to the Museu Nacional d'Art de Catalunya",
             maskForgotten: false
         }
     }
 
-    testAdd(){
-        this.setState({person: this.state.person+1})
+    componentDidMount(){
+        this.occupationService = new OccupationService(()=>{
+            this.setState({
+                person: this.occupationService.occupation,
+                maxPerson: this.occupationService.maxOccupation
+            });
+        });
+
+        // TODO : Call api for the name of the area (for welcome message)
+
     }
 
-    testSub(){
-        this.setState({person: this.state.person-1})
+    componentWillUnmount(){
+        this.occupationService.destroy();
     }
 
-    testMaskForgotten(){
-        this.setState({maskForgotten: true});
-
-        setTimeout(()=>{
-            this.setState({maskForgotten: false});
-        }, 10000)
-    }
-
-    isFull(){
-        return this.state.person >= this.state.maxPerson;
-    }
-
-    maskForgotten(){
-        return this.state.maskForgotten;
-    }
 
     render(){
         return (
@@ -95,6 +89,31 @@ export class EntranceScreen extends React.Component{
         </Container>
         );
     }
+
+    isFull(){
+        return this.state.person >= this.state.maxPerson;
+    }
+
+    maskForgotten(){
+        return this.state.maskForgotten;
+    }
+
+    testAdd(){
+        this.setState({person: this.state.person+1})
+    }
+
+    testSub(){
+        this.setState({person: this.state.person-1})
+    }
+
+    testMaskForgotten(){
+        this.setState({maskForgotten: true});
+
+        setTimeout(()=>{
+            this.setState({maskForgotten: false});
+        }, 10000)
+    }
+
 
 }
 

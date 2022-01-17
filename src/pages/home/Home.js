@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { Container, Box, Typography, Button, Skeleton } from '@mui/material';
+import { Container, Box, Typography, Button } from '@mui/material';
 import Clock from '../../components/Clock/Clock';
 import { OccupationCircle } from '../../components/OccupationComponents/OccupationCircle';
 import { OccupationProportion } from '../../components/OccupationComponents/OccupatonProportion';
+import AttendanceChart from '../../components/Charts/AttendanceChart';
 
 export class Home extends React.Component{
 
@@ -47,8 +48,8 @@ export class Home extends React.Component{
                 </Box>
             </Box>
             <Typography variant="h6">Attendance</Typography>
-            <Box sx={{display:"flex", justifyContent: "center"}}>
-                <Skeleton variant="rectangular" width={600} height={300} />
+            <Box sx={{mr:10,ml:10}}>
+                <AttendanceChart/>
             </Box>
             
             <Typography variant="h6">Test</Typography>

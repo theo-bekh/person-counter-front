@@ -6,12 +6,14 @@ class OccupationService{
     }
 
     initializeWebSocket(){
+        // Simulate the load of websocket
         setTimeout(()=>{
             this.updateValue(25,50)
-
-            // Simulate modification from websocket
+            // Fake websocket sending data each second
             this.interval = setInterval(()=>{
-                let rd = Math.random()>0.5 ? 1: -1; 
+                // New data from the websocket
+                let rd = Math.random()>0.5 ? 1: -1;
+                // Update the different value 
                 this.updateValue(this.occupation+rd, this.maxOccupation);
             }, 1000)
         },100);
@@ -29,18 +31,20 @@ class OccupationService{
     }
 
     addPerson(){
-        //send to the WebSocket
+        //send to the WebSocket the modification
 
-        //Update Value
+        //Update Value TO REMOVE
         this.updateValue(this.occupation+1, this.maxOccupation);
     }
 
     removePerson(){
-        //send to the WebSocket
+        //send to the WebSocket the modification
 
-        //Update Value
+        //Update Value TO REMOVE
         this.updateValue(this.occupation-1, this.maxOccupation);
     }
+
+    
 
 }
 

@@ -1,7 +1,12 @@
+import { Container } from '@mui/material';
 import * as React from 'react';
 
 function Statistics(){
-    return <div>Stat</div>
+    return (
+    <Container>
+        
+    </Container>
+    )
 }
 
 export default Statistics;
